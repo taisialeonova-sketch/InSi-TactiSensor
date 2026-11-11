@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TACTISENSOR — тактильные датчики для роботов и протезов</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+    background: #ffffff;
+  }
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+    color: #fff;
+    padding: 96px 0 80px;
+  }
+  .hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+  .hero p.sub {
+    font-size: 20px;
+    color: #cbd5e1;
+    max-width: 720px;
+    margin-bottom: 36px;
+  }
+  .hero .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+  .badge {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e2e8f0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .cta-btn:hover { background: #7dd3fc; }
+
+  /* Sections */
+  section { padding: 72px 0; }
+  section.alt { background: #f8fafc; }
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    letter-spacing: -0.01em;
+  }
+  .lead { font-size: 18px; color: #475569; max-width: 780px; }
+  .lead + .lead { margin-top: 14px; }
+
+  /* Problem / solution grid */
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+    margin-top: 36px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 28px;
+  }
+  .card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0f172a;
+  }
+  .card p { color: #475569; font-size: 15px; }
+
+  /* Effects list */
+  .effects { margin-top: 32px; }
+  .effects li {
+    list-style: none;
+    padding: 14px 0 14px 36px;
+    position: relative;
+    font-size: 17px;
+    color: #334155;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .effects li:last-child { border-bottom: none; }
+  .effects li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #0ea5e9;
+    font-weight: 700;
+  }
+
+  /* For whom */
+  .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+  .tag {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* Contacts */
+  .contacts {
+    background: #0f172a;
+    color: #fff;
+    padding: 64px 0;
+  }
+  .contacts h2 { color: #fff; }
+  .contacts p { color: #cbd5e1; font-size: 17px; margin-bottom: 10px; }
+  .contacts a { color: #38bdf8; text-decoration: none; }
+  .contacts a:hover { text-decoration: underline; }
+  .contacts .big-link {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 18px;
+  }
+
+  /* Footer */
+  footer {
+    background: #0b1220;
+    color: #64748b;
+    font-size: 13px;
+    padding: 28px 0;
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    .hero { padding: 64px 0 56px; }
+    .hero h1 { font-size: 30px; }
+    .hero p.sub { font-size: 17px; }
+    section { padding: 52px 0; }
+    h2 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <h1>Тактильные датчики для роботов и протезов</h1>
+    <p class="sub">Мы даём роботам и протезам осязание — способность чувствовать усилие, точку касания и момент, когда предмет начинает выскальзывать.</p>
+    <div class="badges">
+      <span class="badge">Резидент КРИТБИ</span>
+      <span class="badge">Заявка на «Сколково» прошла экспертизу</span>
+      <span class="badge">Лауреат премии «Промышленная робототехника — 2026»</span>
+      <span class="badge">Номинант «Бизнес.Лидеры»</span>
+    </div>
+    <a href="#contact" class="cta-btn">Обсудить сотрудничество</a>
+  </div>
+</header>
+
+<!-- PROBLEM -->
+<section>
+  <div class="container">
+    <h2>Проблема</h2>
+    <p class="lead">Робот видит предмет, но не чувствует его. Он берёт слишком сильно или роняет, не замечает, что предмет начал выскальзывать. Хрупкие, неформованные и скользящие объекты до сих пор берут люди — потому что у машин не хватает осязания.</p>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="alt">
+  <div class="container">
+    <h2>Что мы делаем</h2>
+    <p class="lead">Мы разрабатываем тактильные датчики, которые встраиваются в пальцы роботов и протезов. Датчик чувствует усилие и точку касания и заранее распознаёт начало проскальзывания — робот перестаёт действовать «вслепую».</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Для промышленных роботов</h3>
+        <p>Ставится на существующий захват — без замены оборудования. Робот уверенно берёт хрупкие и неформованные объекты.</p>
+      </div>
+      <div class="card">
+        <h3>Для гуманоидных роботов</h3>
+        <p>Встраивается в пальцы. Даёт осязание, без которого гуманоид не может выполнять тонкие операции — дома или на производстве.</p>
+      </div>
+      <div class="card">
+        <h3>Для бионических протезов</h3>
+        <p>Возвращает человеку ощущение касания — он чувствует, что держит и с какой силой, а не просто смотрит на руку.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EFFECT -->
+<section>
+  <div class="container">
+    <h2>Что это даёт</h2>
+    <ul class="effects">
+      <li>Снижение брака и простоев при работе с хрупкими, неформованными и скользящими объектами.</li>
+      <li>Роботизация операций, которые раньше выполняли вручную.</li>
+      <li>Гуманоидные роботы переходят от демонстраций к реальной работе.</li>
+      <li>Протез перестаёт быть инструментом и становится частью тела.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FOR WHOM -->
+<section class="alt">
+  <div class="container">
+    <h2>Для кого</h2>
+    <p class="lead">Мы работаем с производителями и интеграторами, которым нужна тактильная чувствительность в их продуктах.</p>
+    <div class="tags">
+      <span class="tag">Промышленная робототехника</span>
+      <span class="tag">Гуманоидные роботы</span>
+      <span class="tag">Бионические протезы</span>
+      <span class="tag">Пищевая промышленность</span>
+      <span class="tag">Ритейл и логистика</span>
+      <span class="tag">Приборостроение</span>
+      <span class="tag">АПК</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contact">
+  <div class="container">
+    <h2>Свяжитесь с нами</h2>
+    <p>Расскажите о вашей задаче — обсудим, подходит ли наше решение.</p>
+    <p>Почта: <a href="mailto:info@tactisensor.ru">info@tactisensor.ru</a></p>
+    <p>Телефон: <a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+    <a href="mailto:info@tactisensor.ru" class="cta-btn big-link">Написать нам</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    ООО «ИнтеллектСистемы» · ОГРН 1252400024986 · ИНН 2464168624 · Резидент КРИТБИ с 09.02.2026
+  </div>
+</footer>
+
+</body>
+</html>
